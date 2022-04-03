@@ -1,0 +1,32 @@
+/* .block{
+  background-image: url('images/chigur.jpg');
+  width: 450px;
+  width: 100%;
+  height: 450px;
+  margin: 0 0 0 3.5%;s
+  padding: 2%;
+} */
+div{
+  position: relative;
+  background-color: #DE931B
+
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: white;
+    width: 100%;
+    height: 100
+    top: 50%;
+    left: 50%;
+  }
+
+  
+}
+img{
+  position: absolute;
+  object-fit: fill;
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+}
