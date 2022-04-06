@@ -1,32 +1,89 @@
-/* .block{
-  background-image: url('images/chigur.jpg');
-  width: 450px;
-  width: 100%;
-  height: 450px;
-  margin: 0 0 0 3.5%;s
-  padding: 2%;
-} */
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      /*height: 100%;*/
+      min-height: 100%;
+      
+    }
+
+    .grid {
+      /*рисуем рамки*/
+      border: 5px solid #915A00;
+      border-radius: 15px;
+      background-color: #DE931B;
+      /*подключаем сетку*/
+      display: grid;
+      grid-template-columns: repeat(5, 291px);
+      grid-template-rows: 428px;
+      grid-column-gap: 9px;
+      /* overflow: hidden; */
+    }
+
+    /*внешний вид ячеек*/
+    .grid > * {
+      /*фоновый цвет*/
+       /*скругление углов*/
+      border-radius: 5px;
+      vertical-align: top
+      /*отступ от содержимого до края ячейки*/
+      padding: 7px;
+      /*расстояние от одной границы ячейки до другой*/
+      margin: 1px;
+
+    }
+
+    .hero-text {
+      text-align: center;
+      /* position: absolute; */
+      transform: translate(-50%, -50%);
+      color: white;
+      /* top: 50%; */
+      left: 50%;
+    }
+
 div{
   position: relative;
   background-color: #DE931B
 
   .hero-text {
-    text-align: center;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    color: white;
-    width: 100%;
-    height: 100
-    top: 50%;
-    left: 50%;
+  text-align: center;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  height: 100
+  top: 50%;
+  left: 50%;
   }
-
+  
   
 }
+
 img{
   position: absolute;
   object-fit: fill;
   border-radius: 20px;
   width: 100%;
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+  position: absolute;
+  
+}
+
+.content {
+  
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  position:absolute;
+  bottom:0;
+}
+
+html {
   height: 100%;
 }
